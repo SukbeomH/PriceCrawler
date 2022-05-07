@@ -1,0 +1,11 @@
+// context
+{
+	"eventId": "4098262202180537",
+	"timestamp": "2022-04-20T03:07:18.230Z",
+	"eventType": "google.storage.object.finalize",
+	"resource": {
+		"service": "storage.googleapis.com",
+		"name": "projects/_/buckets/selfproject-storage/objects/이제는정말.jpeg",
+		"type": "storage#object"
+	}
+}

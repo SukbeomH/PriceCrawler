@@ -1,0 +1,192 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  id: String!
+  email: String!
+  password: String!
+  snsId: String!
+  provider: String!
+  point: Int!
+  auth: Int!
+  admin: Boolean!
+}
+
+type Category {
+  id: Int!
+  name: String!
+}
+
+type Board {
+  id: String!
+  title: String
+  content: String
+  user: User!
+  category: Category!
+}
+
+type Cart {
+  id: String!
+  price: Int!
+  count: Int!
+  able: Boolean!
+  products: [Product!]!
+  user: User!
+}
+
+type Product {
+  id: String!
+  name: String
+  price: Int
+  descriptions: String
+  user: User!
+  carts: [Cart!]!
+}
+
+type Comment {
+  id: String!
+  content: String!
+  board: Board!
+  user: User!
+}
+
+type Deal {
+  id: String!
+  name: String!
+  price: Int!
+  site: String!
+  shop: String!
+  isEnd: Boolean!
+  time: String!
+  image: String!
+  category: Category!
+}
+
+type DealComment {
+  id: String!
+  content: String!
+  user: User!
+  deal: Deal!
+}
+
+type PointTransaction {
+  id: String!
+  impUid: String!
+  amount: Int!
+  status: POINT_TRANSACTION_STATUS_ENUM!
+  user: User!
+  purchasedAt: DateTime!
+}
+
+enum POINT_TRANSACTION_STATUS_ENUM {
+  PAYMENT
+  CANCEL
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Image {
+  id: String!
+  image: [String!]!
+  product: Product!
+  board: Board!
+}
+
+type Query {
+  fetchBoards: [Board!]!
+  fetchBoardsWithDelete: [Board!]!
+  fetchBoard(boardId: String!): Board!
+  fetchProducts(search: String!): [Product!]!
+  fetchProduct(productId: String!): Product!
+  fetchCategories: [Category!]!
+  fetchCategoriesWithDelete: [Category!]!
+  fetchCategory(name: String!): Category!
+  fetchComments: [Comment!]!
+  fetchComment(commentId: String!): Comment!
+  fetchDealComments: [DealComment!]!
+  fetchDealComment(dealCommentId: String!): DealComment!
+  fetchProductsWithDelete: [Product!]!
+  fetchUsers: [User!]!
+  fetchUser: User!
+}
+
+type Mutation {
+  login(email: String!, password: String!): String!
+  restoreAccessToken: String!
+  logout: String!
+  createBoard(createBoardInput: CreateBoardInput!): Board!
+  updateBoard(boardId: String!, updateBoardInput: UpdateBoardInput!): Board!
+  deleteBoard(boardId: String!): Board!
+  restoreDeletedBoard(boardId: String!): Board!
+  createCart(createCartInput: CreateCartInput!): Cart!
+  createCategory(name: String!): Category!
+  createComment(createCommentInput: CreateCommentInput!): Comment!
+  deleteComment(CommentId: String!): Comment!
+  createDealComment(createDealCommentInput: CreateDealCommentInput!): DealComment!
+  deleteDealComment(DealCommentId: String!): DealComment!
+  uploadFileMany(files: [Upload!]!): [String!]!
+  createPointTransaction(impUid: String!, amount: Float!): PointTransaction!
+  cancelPointTransaction(impUid: String!, amount: Float!): PointTransaction!
+  createProduct(createProductInput: CreateProductInput!): Product!
+  updateProduct(productId: String!, updateProductInput: UpdateProductInput!): Product!
+  deleteProduct(productId: String!): Product!
+  restoreDeletedProduct(productId: String!): Product!
+  createImage(productId: String!, images: [String!]!): [Image!]!
+  updateImage(productId: String!, images: [String!]!): [Image!]!
+  createUser(email: String!, password: String!, snsId: String!, provider: String!, point: Float!, auth: Float!): User!
+  updateUserPassword(newPassword: String!): User!
+  deleteUser: Boolean!
+}
+
+input CreateBoardInput {
+  title: String
+  content: String
+  userId: String!
+  categoryName: String!
+}
+
+input UpdateBoardInput {
+  title: String
+  content: String
+  userId: String
+  categoryName: String
+}
+
+input CreateCartInput {
+  price: Int!
+  count: Int!
+  able: Boolean = true
+}
+
+input CreateCommentInput {
+  content: String!
+  boardId: String!
+  userId: String!
+}
+
+input CreateDealCommentInput {
+  content: String!
+  dealId: String!
+  userId: String!
+}
+
+"""The `Upload` scalar type represents a file upload."""
+scalar Upload
+
+input CreateProductInput {
+  name: String
+  price: Int
+  descriptions: String
+  userId: String!
+}
+
+input UpdateProductInput {
+  name: String
+  price: Int
+  descriptions: String
+  userId: String
+}

@@ -1,0 +1,51 @@
+{
+    "mappings": {
+      "_doc": {
+        "properties": {
+          "@timestamp": {
+            "type": "date"
+          },
+          "@version": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "createdat": {
+            "type": "date"
+          },
+          "descriptions": {
+            "type": "text",
+            "analyzer": "my_analyzer"
+          },
+          "id": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "name": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "price": {
+            "type": "long"
+          },
+          "unix_timestamp(updatedat)": {
+            "type": "float"
+          }
+        }
+      }
+    }
+  }
