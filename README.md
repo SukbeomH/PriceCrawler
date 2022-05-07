@@ -1,11 +1,11 @@
 # PriceCrawler
 
-> To Buy or Not to Buy, therefore I buy.
+> To Buy or Not to Buy, therefore I buy.  
 > 알뜰해서 핫딜을 찾는게 아니라 핫딜을 찾다보니 알뜰이더라
 
 ![First Project](https://img.shields.io/badge/github-My%20First%20Project-red)
 
-여기저기 널리 퍼진 커뮤니티의 핫딜 게시판을 공유합니다. 알구몬의 클론 프로젝트를 표방 중입니다.
+여기저기 널리 퍼진 커뮤니티의 핫딜 게시판을 공유합니다. 알구몬의 클론 프로젝트를 표방 중입니다.  
 알구몬 : https://algumon.com/
 
 ## ERD
@@ -14,7 +14,7 @@
 
 ## Pipeline
 
-![Pipeline](readMe/pipeline.png)
+![Pipeline](readMe/pipeline3.png)
 
 ## 설치 방법
 
