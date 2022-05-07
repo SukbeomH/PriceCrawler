@@ -2,7 +2,7 @@
 
 <!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
 
-![GitHub repo size](https://img.shields.io/github/repo-size/SukbeomH/PriceCrawler)
+![First Project](https://img.shields.io/badge/github-My%20First%20Project-red)
 ![GitHub contributors](https://img.shields.io/github/contributors/SukbeomH/PriceCrawler/README-template.md)
 ![GitHub stars](https://img.shields.io/github/stars/SukbeomH/PriceCrawler/README-template.md?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/SukbeomH/PriceCrawler/README-template.md?style=social)

@@ -1,14 +1,20 @@
 # PriceCrawler
 
-> 간략한 프로젝트 소개 문구를 작성합니다.
+> To Buy or Not to Buy, therefore I buy.
+> 알뜰해서 핫딜을 찾는게 아니라 핫딜을 찾다보니 알뜰이더라
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+![First Project](https://img.shields.io/badge/github-My%20First%20Project-red)
 
-한 두 문단으로 프로젝트 소개 글을 작성합니다.
+여기저기 널리 퍼진 커뮤니티의 핫딜 게시판을 공유합니다. 알구몬의 클론 프로젝트를 표방 중입니다.
+알구몬 : https://algumon.com/
 
-![](../header.png)
+## ERD
+
+![ERD](readMe/erd.png)
+
+## Pipeline
+
+![Pipeline](readMe/pipeline.png)
 
 ## 설치 방법
 
@@ -41,16 +47,6 @@ npm test
 
 ## 업데이트 내역
 
-- 0.2.1
-  - 수정: 문서 업데이트 (모듈 코드 동일)
-- 0.2.0
-  - 수정: `setDefaultXYZ()` 메서드 제거
-  - 추가: `init()` 메서드 추가
-- 0.1.1
-     \* 버그 수정: `baz()` 메서드 호출 시 부팅되지 않는 현상 (@컨트리뷰터 감사합니다!)
-- 0.1.0
-  - 첫 출시
-  - 수정: `foo()` 메서드 네이밍을 `bar()`로 수정
 - 0.0.1
   - 작업 진행 중
 
