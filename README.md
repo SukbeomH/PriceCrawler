@@ -16,34 +16,33 @@
 
 ![Pipeline](readMe/pipeline3.png)
 
-## 설치 방법
+## Prerequisites
 
-OS X & 리눅스:
+## 설치 전에 확인할 것, 개발 환경 설정
 
-```sh
-npm install my-crazy-module --save
+Before you begin, ensure you have met the following requirements:  
+시작하기 전에, 요구사항을 충족하는지 확인해주세요:
+
+<!--- These are just example requirements. Add, duplicate or remove as required --->
+
+- You have installed the latest version of `Docker`
+- You have installed the latest version of `Docker-compose`
+
+- `Docker` 최신 버전
+- `Docker-compose` 최신 버전
+
+## Installing <PriceCrawler>
+
+## <PriceCrawler> 설치 방법
+
+```
+docker compose -f docker-compose.yaml build
+docker compose -f docker-compose.yaml up
 ```
 
-윈도우:
+## Using <PriceCrawler>
 
-```sh
-edit autoexec.bat
-```
-
-## 사용 예제
-
-스크린 샷과 코드 예제를 통해 사용 방법을 자세히 설명합니다.
-
-_더 많은 예제와 사용법은 [Wiki][wiki]를 참고하세요._
-
-## 개발 환경 설정
-
-모든 개발 의존성 설치 방법과 자동 테스트 슈트 실행 방법을 운영체제 별로 작성합니다.
-
-```sh
-make install
-npm test
-```
+## <PriceCrawler> 사용법
 
 ## 업데이트 내역
 
@@ -52,19 +51,15 @@ npm test
 
 ## 정보
 
-이름 – [@트위터 주소](https://twitter.com/dbader_org) – 이메일주소@example.com
+SukbeomH – brent93.dev@gmail.com
 
-XYZ 라이센스를 준수하며 `LICENSE`에서 자세한 정보를 확인할 수 있습니다.
+## License
 
-[https://github.com/yourname/github-link](https://github.com/dbader/)
+<!--- If you're not sure which open license to use see https://choosealicense.com/--->
 
-## 기여 방법
+This project uses the following license: [<MIT>](https://choosealicense.com/licenses/mit/#).
 
-1. (<https://github.com/yourname/yourproject/fork>)을 포크합니다.
-2. (`git checkout -b feature/fooBar`) 명령어로 새 브랜치를 만드세요.
-3. (`git commit -am 'Add some fooBar'`) 명령어로 커밋하세요.
-4. (`git push origin feature/fooBar`) 명령어로 브랜치에 푸시하세요.
-5. 풀리퀘스트를 보내주세요.
+[https://github.com/SukbeomH/PriceCrawler](https://github.com/SukbeomH/PriceCrawler)
 
 <!-- Markdown link & img dfn's -->
 
