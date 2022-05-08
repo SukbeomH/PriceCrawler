@@ -78,6 +78,10 @@ BIGQUERY_PROJECT_ID=
 BIGQUERY_KEY_FILENAME=
 ```
 
+## 설치 후 배포 주소
+
+http://localhost:3000/graphql
+
 ## Updates :: 업데이트 내역
 
 - 0.0.1
